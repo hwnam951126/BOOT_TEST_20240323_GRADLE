@@ -20,8 +20,8 @@ public class UserInfoService {
         return userInfos;
     }
 
-    public List<UserInfoVo> findByUserId(Long userId) {
-        List<UserInfoVo> userInfo = userInfoRepository.findByUserId(String.valueOf(userId));
+    public List<UserInfoVo> findByUserId(String userId) {
+        List<UserInfoVo> userInfo = userInfoRepository.findByUserId(userId);
         return userInfo;
     }
 }
